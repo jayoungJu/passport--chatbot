@@ -92,13 +92,13 @@ class ChatResponse(BaseModel): content: str; sources: List[str]; raw: Dict[str, 
 #           🚨 중요: 아래 3개의 변수에 본인의 실제 값을 채워주세요!
 # ===================================================================
 # 1. Clova Studio API 키
-CLOVA_API_KEY = "nv-2a8de249-3782-434e-9215-8c2432637ed8"
+CLOVA_API_KEY = "nv-2a8de24........."
 
 # 2. API Gateway에서 발급받은 '호출 URL(Invoke URL)'
-CLOVA_API_ENDPOINT = "https://kr-pub-gateway.rag.naverncp.com/api/v1/svc/68ad0c206251e148f1b5f324/conversation"
+CLOVA_API_ENDPOINT = "https://kr-pub-gateway.rag.naverncp.com/api/v1/svc/서비스ID/conversation"
 
 # 3. 나의 RAG 서비스 ID
-RAG_SERVICE_ID = "68ad0c206251e148f1b5f324"
+RAG_SERVICE_ID = "68ad0c2........."
 # ===================================================================
 
 def ask_clova(user_message: str) -> ChatResponse:
